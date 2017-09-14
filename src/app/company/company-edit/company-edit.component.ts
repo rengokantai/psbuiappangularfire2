@@ -13,5 +13,7 @@ export class CompanyEditComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  saveCompany(company){
+    this.company$.set(company);
+  }
 }

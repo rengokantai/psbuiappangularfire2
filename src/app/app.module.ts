@@ -10,7 +10,7 @@ import { MaterialModule} from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule} from '@angular/flex-layout';
 import { CompanyEditComponent } from './company/company-edit/company-edit.component';
-
+import {CompanyService} from './company/company.service';
 
  const firebaseConfig = {
     apiKey: "AIzaSyD66Bev_bJmrL1UPMxv71F1mExGvc26AOY",
@@ -36,7 +36,7 @@ import { CompanyEditComponent } from './company/company-edit/company-edit.compon
     BrowserAnimationsModule,
     FlexLayoutModule
   ],
-  providers: [],
+  providers: [CompanyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
