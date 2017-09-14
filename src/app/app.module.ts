@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { MaterialModule} from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule} from '@angular/flex-layout';
+import { CompanyEditComponent } from './company/company-edit/company-edit.component';
 
 
  const firebaseConfig = {
@@ -22,7 +23,8 @@ import { FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CompanyEditComponent
   ],
   imports: [
     BrowserModule,
