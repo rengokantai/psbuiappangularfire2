@@ -1,1 +1,9 @@
-{{company$|async|json}}
+<h1>Company edit</h1>
+<md-card *ngIf="company$ | async as company">
+    <md-input-container>
+        <input type="text" mdInput [(ngModel)]="company.name">
+    </md-input-container>
+    <md-card-actions align="right">
+        <button md-button (click)="saveCompany(company)">save</button>
+    </md-card-actions>
+</md-card>
