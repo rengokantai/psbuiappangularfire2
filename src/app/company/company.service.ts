@@ -10,7 +10,15 @@ export class CompanyService {
   ngOnInit() {
   }
   saveCompany(company){
-    this.company$.set(company);
+    this.company$.set({name:company.name}).then(_=>console.log('success')).catch(error=>console.log(error));
+  }
+
+  editCompany(company){
+    this.company$.update(company).then(_=>console.log('success')).catch(error=>console.log(error));
+  }
+
+    removeCompany(company){
+    this.company$.remove().then(_=>console.log('success')).catch(error=>console.log(error));
   }
 
 }

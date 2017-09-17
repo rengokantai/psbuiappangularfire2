@@ -17,4 +17,10 @@ export class CompanyEditComponent implements OnInit {
   saveCompany(company){
     this.companyService.saveCompany(company);
   }
+  editCompany(company){
+    this.companyService.editCompany(company);
+  }
+    removeCompany(company){
+    this.companyService.removeCompany(company);
+  }
 }
